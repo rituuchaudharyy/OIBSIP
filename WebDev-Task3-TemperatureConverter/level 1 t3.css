@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef5ff, #f5f0ff);
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(135deg, #4267ee, #7b3ff2);
+    color: white;
+    padding: 30px;
+    border-radius: 18px 18px 0 0;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+.converter-box {
+    background: white;
+    padding: 35px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    color: #202a44;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+
+.field {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #202a44;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccd3e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #6848ee;
+}
+
+#error {
+    color: red;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+button {
+    width: 45%;
+    margin: 30px auto;
+    padding: 15px;
+    display: block;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #4267ee, #7b3ff2);
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result-heading {
+    border-top: 2px solid #e0e4ec;
+    padding-top: 30px;
+}
+
+.results {
+    background: #f5f8ff;
+    border: 1px solid #d6dff0;
+    border-radius: 12px;
+    padding: 10px 25px;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 1px solid #d6dff0;
+    font-size: 18px;
+}
+
+.result:last-child {
+    border-bottom: none;
+}
+
+.result strong {
+    color: #3949ab;
+}
+
+.note {
+    margin-top: 25px;
+    padding: 18px;
+    background: #fff8df;
+    border: 1px solid #f3d77a;
+    border-radius: 10px;
+    color: #725400;
+}
+
+footer {
+    margin-top: 25px;
+    color: #4b5563;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
